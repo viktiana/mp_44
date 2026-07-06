@@ -1,13 +1,17 @@
-function openModal() {
-    document.getElementById('backdrop').classList.add('is-open');
-    document.body.style.overflow = 'hidden';
+function openModal(number) {
+    document.getElementById("backdrop" + number).classList.add("is-open");
+    document.body.style.overflow = "hidden";
 }
 
-function closeModal() {
-    document.getElementById('backdrop').classList.remove('is-open');
-    document.body.style.overflow = '';
+function closeModal(number) {
+    document.getElementById("backdrop" + number).classList.remove("is-open");
+    document.body.style.overflow = "";
 }
 
-function closeModalOutside(e) {
-    if (e.target === document.getElementById('backdrop')) closeModal();
+function closeModalOutside(event, number) {
+    const backdrop = document.getElementById("backdrop" + number);
+
+    if (event.target === backdrop) {
+        closeModal(number);
+    }
 }

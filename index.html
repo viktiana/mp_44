@@ -42,93 +42,94 @@
 
         <div class="endings-grid">
 
-            <div class="card1" onclick="openModal()">
+            <div class="card1" onclick="openModal(1)">
                 <div class="card-poster">
                     <div class="poster-placeholder">
                         <img class="incard-img" src="./img/leave.webp">
-                    </div>
-                    <div class="card-overlay">
-                        <button class="overlay-btn">More</button>
                     </div>
                 </div>
                 <div class="card-body">
                     <div class="card-ending">Good ending</div>
                     <div class="end-title">Leave</div>
                 </div>
+                <div class="card-overlay">
+                    <button class="overlay-btn">More</button>
+                </div>
             </div>
 
-            <div class="card2" onclick="openModal()">
+            <div class="card2" onclick="openModal(2)">
                 <div class="card-poster">
                     <div class="poster-placeholder">
                         <img class="incard-img" src="./img/inwater.webp">
-                    </div>
-                    <div class="card-overlay">
-                        <button class="overlay-btn">More</button>
                     </div>
                 </div>
                 <div class="card-body">
                     <div class="card-ending">Bad ending</div>
                     <div class="end-title">In Water</div>
                 </div>
+                <div class="card-overlay">
+                    <button class="overlay-btn">More</button>
+                </div>
             </div>
 
-            <div class="card3" onclick="openModal()">
+            <div class="card3" onclick="openModal(3)">
                 <div class="card-poster">
                     <div class="poster-placeholder">
                         <img class="incard-img" src="./img/maria.webp">
-                    </div>
-                    <div class="card-overlay">
-                        <button class="overlay-btn">More</button>
                     </div>
                 </div>
                 <div class="card-body">
                     <div class="card-ending">Bad ending</div>
                     <div class="end-title">Maria</div>
                 </div>
+                <div class="card-overlay">
+                    <button class="overlay-btn">More</button>
+                </div>
             </div>
 
-            <div class="card4" onclick="openModal()">
+            <div class="card4" onclick="openModal(4)">
                 <div class="card-poster">
                     <div class="poster-placeholder">
                         <img class="incard-img" src="./img/rebirth.webp">
-                    </div>
-                    <div class="card-overlay">
-                        <button class="overlay-btn">More</button>
                     </div>
                 </div>
                 <div class="card-body">
                     <div class="card-ending">Strange ending</div>
                     <div class="end-title">Rebirth</div>
                 </div>
+                <div class="card-overlay">
+                    <button class="overlay-btn">More</button>
+                </div>
             </div>
 
-            <div class="card5" onclick="openModal()">
+            <div class="card5" onclick="openModal(5)">
                 <div class="card-poster">
                     <div class="poster-placeholder">
                         <img class="incard-img" src="./img/ufo.webp">
-                    </div>
-                    <div class="card-overlay">
-                        <button class="overlay-btn">More</button>
                     </div>
                 </div>
                 <div class="card-body">
                     <div class="card-ending">Strange ending</div>
                     <div class="end-title">UFO</div>
                 </div>
+                <div class="card-overlay">
+                    <button class="overlay-btn">More</button>
+                </div>
             </div>
 
-            <div class="card6" onclick="openModal()">
+            <div class="card6" onclick="openModal(6)">
                 <div class="card-poster">
                     <div class="poster-placeholder">
                         <img class="incard-img" src="./img/dog.webp">
                     </div>
-                    <div class="card-overlay">
-                        <button class="overlay-btn">More</button>
-                    </div>
+
                 </div>
                 <div class="card-body">
                     <div class="card-ending">Strange ending</div>
                     <div class="end-title">Dog</div>
+                </div>
+                <div class="card-overlay">
+                    <button class="overlay-btn">More</button>
                 </div>
             </div>
 
@@ -137,7 +138,7 @@
 
 
     <div class="backdrop" id="backdrop1" onclick="closeModalOutside(event,1)">
-        <div class="modal" id="modal">
+        <div class="modal">
             <button class="modal-close" onclick="closeModal(1)">X</button>
             <div class="modal-inner">
                 <div class="modal-poster">
@@ -166,7 +167,7 @@
     </div>
 
     <div class="backdrop" id="backdrop2" onclick="closeModalOutside(event,2)">
-        <div class="modal" id="modal">
+        <div class="modal">
             <button class="modal-close" onclick="closeModal(2)">X</button>
             <div class="modal-inner">
                 <div class="modal-poster">
@@ -193,7 +194,7 @@
 
 
     <div class="backdrop" id="backdrop3" onclick="closeModalOutside(event,3)">
-        <div class="modal" id="modal">
+        <div class="modal">
             <button class="modal-close" onclick="closeModal(3)">X</button>
             <div class="modal-inner">
                 <div class="modal-poster">
@@ -217,7 +218,7 @@
     </div>
 
     <div class="backdrop" id="backdrop4" onclick="closeModalOutside(event,4)">
-        <div class="modal" id="modal">
+        <div class="modal">
             <button class="modal-close" onclick="closeModal(4)">X</button>
             <div class="modal-inner">
                 <div class="modal-poster">
@@ -240,7 +241,7 @@
     </div>
 
     <div class="backdrop" id="backdrop5" onclick="closeModalOutside(event,5)">
-        <div class="modal" id="modal">
+        <div class="modal">
             <button class="modal-close" onclick="closeModal(5)">X</button>
             <div class="modal-inner">
                 <div class="modal-poster">
@@ -267,7 +268,7 @@
     </div>
 
     <div class="backdrop" id="backdrop6" onclick="closeModalOutside(event,6)">
-        <div class="modal" id="modal">
+        <div class="modal">
             <button class="modal-close" onclick="closeModal(6)">X</button>
             <div class="modal-inner">
                 <div class="modal-poster">
@@ -287,8 +288,6 @@
             </div>
         </div>
     </div>
-
-
 
 
     <footer class="footer">

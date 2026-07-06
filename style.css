@@ -45,7 +45,7 @@ body {
     padding-right: 200px;
 }
 
-.img-logoDown{
+.img-logoDown {
     height: 30px;
     padding-right: 200px;
     height: 30px;
@@ -73,13 +73,38 @@ span {
 }
 
 .menu-btn {
-    padding: 0 30px 15px;
+    padding: 10px 50px;
     border-radius: 15px;
-    border-color: rgb(37, 36, 37);
+    border: none;
     justify-items: center;
     background-color: var(--header-color);
     color: var(--font-color);
     cursor: pointer;
+}
+
+.menu-btn:active{
+    background-color: var(--word-color);
+}
+
+.overlay-btn{
+    padding: 10px 50px;
+    border-radius: 15px;
+    border-color: rgb(35, 4, 47);
+    justify-items: center;
+    text-align: center;
+    background-color: var(--header-color);
+    color: rgb(178, 162, 184);
+    cursor: pointer;
+}
+
+.end-title{
+    color: var(--word-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-ending{
+    opacity: 80%;
 }
 
 .hero-text {
@@ -109,12 +134,16 @@ span {
 .footer {
     background-color: var(--footer-color);
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: 100%;
 }
 
-.footer-ul{
+.footer-ul {
     list-style: none;
+}
+
+footer h3{
+    color: var(--word-color);
 }
 
 .footer-bottom {
@@ -122,11 +151,12 @@ span {
     justify-content: center;
     background-color: var(--footer-color);
     width: 100%;
+    color: var(--word-color);
 }
 
 .endings-grid {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 30px;
     padding: 60px;
     height: 500px;
@@ -141,8 +171,10 @@ span {
     background: #1d1d20;
     border-radius: 16px;
     overflow: hidden;
-    cursor: pointer;
     transition: .3s;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .card1:hover,
@@ -154,19 +186,26 @@ span {
     transform: translateY(-8px);
 }
 
-.incard-img{
-    width: 240px;
+.card-poster {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.incard-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .backdrop {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,.8);
-
+    background: rgba(0, 0, 0, .8);
     display: flex;
     justify-content: center;
     align-items: center;
-
     opacity: 0;
     visibility: hidden;
     transition: .3s;
@@ -190,10 +229,9 @@ span {
     position: absolute;
     top: 20px;
     right: 20px;
-
     border: none;
     background: transparent;
-    color: white;
+    color:var(--word-color);
     font-size: 24px;
     cursor: pointer;
 }
