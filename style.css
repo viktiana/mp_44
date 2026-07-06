@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: rgb(21, 21, 22);
+    --header-color: rgb(29, 29, 32);
+    --font-color: rgb(238, 236, 249);
+    --word-color: rgb(111, 71, 241);
+    --footer-color: rgb(27, 27, 29);
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    min-height: 100vh;
+}
+
+.header {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    height: 80px;
+    width: 100%;
+    background-color: var(--header-color);
+    padding: 0 70px;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.img-logo {
+    height: 30px;
+    padding-right: 200px;
+}
+
+.img-logoDown{
+    height: 30px;
+    padding-right: 200px;
+    height: 30px;
+    padding-left: 50px;
+}
+
+.choose-menu {
+    display: flex;
+}
+
+span {
+    color: var(--word-color);
+}
+
+#section-hero {
+    justify-content: center;
+
+}
+
+.choose-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-btn {
+    padding: 0 30px 15px;
+    border-radius: 15px;
+    border-color: rgb(37, 36, 37);
+    justify-items: center;
+    background-color: var(--header-color);
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.hero-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.div-hero {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.footer {
+    background-color: var(--footer-color);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+}
+
+.footer-ul{
+    list-style: none;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    background-color: var(--footer-color);
+    width: 100%;
+}
+
+.endings-grid {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 30px;
+    padding: 60px;
+    height: 500px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+    background: #1d1d20;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover,
+.card6:hover {
+    transform: translateY(-8px);
+}
+
+.incard-img{
+    width: 240px;
+}
+
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    width: 800px;
+    max-width: 90%;
+    background: #202024;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}

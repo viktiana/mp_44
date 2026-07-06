@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <img class="img-logo" src="./img/silent_hill_logo.webp">
+        <nav>
+            <ul class="nav">
+                <li><span>Endings Silent Hill 2</span></li>
+                <li>Other games</li>
+                <li>Other themes</li>
+                <li>About us</li>
+                <li>Contact us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section-hero">
+            <div class="div-hero">
+                <h1 class="hero-h">All endings in Silent hill 2 Remake</h1>
+                <p class="hero-text">Here you can take a look at all endings in Silent hill 2.</p>
+            </div>
+
+            <div class="choose-menu">
+                <button class="menu-btn active">All</button>
+                <button class="menu-btn">Good endings</button>
+                <button class="menu-btn">Bad endings</button>
+                <button class="menu-btn">Strange endings</button>
+            </div>
+        </section>
+
+        <div class="endings-grid">
+
+            <div class="card1" onclick="openModal()">
+                <div class="card-poster">
+                    <div class="poster-placeholder">
+                        <img class="incard-img" src="./img/leave.webp">
+                    </div>
+                    <div class="card-overlay">
+                        <button class="overlay-btn">More</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-ending">Good ending</div>
+                    <div class="end-title">Leave</div>
+                </div>
+            </div>
+
+            <div class="card2" onclick="openModal()">
+                <div class="card-poster">
+                    <div class="poster-placeholder">
+                        <img class="incard-img" src="./img/inwater.webp">
+                    </div>
+                    <div class="card-overlay">
+                        <button class="overlay-btn">More</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-ending">Bad ending</div>
+                    <div class="end-title">In Water</div>
+                </div>
+            </div>
+
+            <div class="card3" onclick="openModal()">
+                <div class="card-poster">
+                    <div class="poster-placeholder">
+                        <img class="incard-img" src="./img/maria.webp">
+                    </div>
+                    <div class="card-overlay">
+                        <button class="overlay-btn">More</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-ending">Bad ending</div>
+                    <div class="end-title">Maria</div>
+                </div>
+            </div>
+
+            <div class="card4" onclick="openModal()">
+                <div class="card-poster">
+                    <div class="poster-placeholder">
+                        <img class="incard-img" src="./img/rebirth.webp">
+                    </div>
+                    <div class="card-overlay">
+                        <button class="overlay-btn">More</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-ending">Strange ending</div>
+                    <div class="end-title">Rebirth</div>
+                </div>
+            </div>
+
+            <div class="card5" onclick="openModal()">
+                <div class="card-poster">
+                    <div class="poster-placeholder">
+                        <img class="incard-img" src="./img/ufo.webp">
+                    </div>
+                    <div class="card-overlay">
+                        <button class="overlay-btn">More</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-ending">Strange ending</div>
+                    <div class="end-title">UFO</div>
+                </div>
+            </div>
+
+            <div class="card6" onclick="openModal()">
+                <div class="card-poster">
+                    <div class="poster-placeholder">
+                        <img class="incard-img" src="./img/dog.webp">
+                    </div>
+                    <div class="card-overlay">
+                        <button class="overlay-btn">More</button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-ending">Strange ending</div>
+                    <div class="end-title">Dog</div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <div class="backdrop" id="backdrop1" onclick="closeModalOutside(event,1)">
+        <div class="modal" id="modal">
+            <button class="modal-close" onclick="closeModal(1)">X</button>
+            <div class="modal-inner">
+                <div class="modal-poster">
+                    <div class="modal-info">
+                        <div class="modal-genre">Good ending</div>
+                        <h2 class="modal-title">Leave</h2>
+                        <div class="modal-meta">
+                        </div>
+                        <p class="modal-description">
+                            In the final scene, James encounters Maria in the form of Mary. He
+                            tells her that he no longer needs her and wants to put an end to
+                            this nightmare. The girl, however, wishes to take Mary's place by
+                            his side, but soon realizes that he, too, deserves to die. After the
+                            battle, the protagonist finds himself by Mary's bedside. He asks her
+                            to forgive him for what he has done, saying that he hated her
+                            because of her illness and wanted to regain a peaceful life. Mary
+                            asks why he is sad if that is true. She wants James to continue
+                            living and gives him a farewell letter, after which she dies. In the
+                            end, the hero leaves the city with Laura through the cemetery, while
+                            Mary reads her letter off-screen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="backdrop" id="backdrop2" onclick="closeModalOutside(event,2)">
+        <div class="modal" id="modal">
+            <button class="modal-close" onclick="closeModal(2)">X</button>
+            <div class="modal-inner">
+                <div class="modal-poster">
+                    <div class="modal-info">
+                        <div class="modal-genre">Bad ending</div>
+                        <h2 class="modal-title">In Water</h2>
+                        <div class="modal-meta">
+                        </div>
+                        <p class="modal-description">
+                            I In the final scene, James encounters Maria in the form of Mary. He tells her he
+                            no longer needs her, at which point she transforms into a demon and attacks him.
+                            After the fight, the protagonist finds himself next to Mary, who is lying in
+                            bed. He asks her to forgive him for what he has done, and Mary replies that she
+                            herself wanted to die to end the pain. She forgives James and gives him a
+                            letter. She begins to cough violently, and gradually falls silent. James takes
+                            her body with him to his car and drives into Lake Toluca. He decides to take his
+                            own life so he can be with his wife after death.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="backdrop" id="backdrop3" onclick="closeModalOutside(event,3)">
+        <div class="modal" id="modal">
+            <button class="modal-close" onclick="closeModal(3)">X</button>
+            <div class="modal-inner">
+                <div class="modal-poster">
+                    <div class="modal-info">
+                        <div class="modal-genre">Bad ending</div>
+                        <h2 class="modal-title">Maria</h2>
+                        <div class="modal-meta">
+                        </div>
+                        <p class="modal-description">
+                            In the final scene, James meets Mary. She condemns him for everything he has
+                            done, transforms into a demon, and attacks him. After killing his wife for
+                            the second time, the protagonist returns to the waterfront, where he meets
+                            Maria and asks her to leave town with him. Maria gives him a letter from
+                            Mary, in which Mary forgives him and gives him permission to start a new
+                            life. On the way to the car, Maria starts coughing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="backdrop" id="backdrop4" onclick="closeModalOutside(event,4)">
+        <div class="modal" id="modal">
+            <button class="modal-close" onclick="closeModal(4)">X</button>
+            <div class="modal-inner">
+                <div class="modal-poster">
+                    <div class="modal-info">
+                        <div class="modal-genre">Strange ending</div>
+                        <h2 class="modal-title">Rebirth</h2>
+                        <div class="modal-meta">
+                        </div>
+                        <p class="modal-description">
+                            In the final scene, James encounters Maria in the form of Mary and
+                            declares that it's over between them. After the final battle, the hero
+                            rows a boat across Lake Toluca with his wife's corpse toward an island
+                            where a church is visible. It appears he intends to perform a dark
+                            ritual to resurrect Mary.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="backdrop" id="backdrop5" onclick="closeModalOutside(event,5)">
+        <div class="modal" id="modal">
+            <button class="modal-close" onclick="closeModal(5)">X</button>
+            <div class="modal-inner">
+                <div class="modal-poster">
+                    <div class="modal-info">
+                        <div class="modal-genre">Strange ending</div>
+                        <h2 class="modal-title">UFO</h2>
+                        <div class="modal-meta">
+                        </div>
+                        <p class="modal-description">
+                            A large number of flying saucers swoop into the hotel room. Harry
+                            Mason, the protagonist of the first Silent Hill game, appears and
+                            asks Sanderland if he has seen a small girl with black hair. In
+                            response, James asks Harry if he has met his wife, Mary. Suddenly,
+                            an alien attacks James and, together with Harry, carries him
+                            unconscious onto one of the ships, after which all the UFOs fly
+                            away. This is a traditional humorous UFO ending; in this case, it is
+                            styled after a silent black-and-white film and is available only in
+                            special editions of the game.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="backdrop" id="backdrop6" onclick="closeModalOutside(event,6)">
+        <div class="modal" id="modal">
+            <button class="modal-close" onclick="closeModal(6)">X</button>
+            <div class="modal-inner">
+                <div class="modal-poster">
+                    <div class="modal-info">
+                        <div class="modal-genre">Strange ending</div>
+                        <h2 class="modal-title">Dog</h2>
+                        <div class="modal-meta">
+                        </div>
+                        <p class="modal-description">
+                            James finds himself in a room fully equipped with computer
+                            equipment. A dog is sitting on a chair, pulling on some levers. With
+                            a cry of “So this is all your doing!”, the protagonist collapses to
+                            the floor. The dog runs over and starts licking his face.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <img class="img-logoDown" src="./img/silent_hill_logo.webp">
+        </div>
+
+        <div class="footer-nav">
+            <h3>Navigation</h3>
+            <ul class="footer-ul">
+                <li>Endings Silent Hill 2</li>
+                <li>Other games</li>
+                <li>Other themes</li>
+                <li>About us</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+
+        <div class="footer-feedback">
+            <h3>Contact us</h3>
+            <ul class="footer-ul">
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Twitter</li>
+            </ul>
+        </div>
+
+        <div class="footer-thx">
+            <p>Thanks for watching!</p>
+        </div>
+
+    </footer>
+
+    <div class="footer-bottom">
+        <p>© 2026 Silent Hill 2 by Viktiana</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
